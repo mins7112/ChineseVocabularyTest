@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>중국어 단어 시험지 · 무작위 30문항</title>
+<style>
+:root{color-scheme:light;--wine:#783e48;--wine-dark:#592c34;--ink:#24232a;--muted:#726b6c;--line:#e4dcda;--paper:#fffefa;--bg:#f4f0eb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Apple SD Gothic Neo","Malgun Gothic","Noto Sans CJK KR",sans-serif;line-height:1.5}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:10px;background:#fff;padding:11px 17px;color:var(--ink);font-weight:700;transition:background .15s,transform .15s}button:hover:enabled{background:#f8f3f0}button:active:enabled{transform:translateY(1px)}button:focus-visible,summary:focus-visible{outline:3px solid #ba8190;outline-offset:3px}button:disabled{opacity:.4;cursor:default}.primary{background:var(--wine);border-color:var(--wine);color:white}.primary:hover:enabled{background:var(--wine-dark)}
+.app{max-width:1120px;margin:0 auto;padding:36px 24px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}.eyebrow{color:var(--wine);font-size:12px;font-weight:800;letter-spacing:2px;margin:0 0 6px}.top h1{font-size:26px;letter-spacing:-1px;margin:0}.badge{color:var(--wine);background:#eae0df;border-radius:30px;padding:8px 14px;font-size:13px;white-space:nowrap}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:12px}.toolbar .spacer{flex:1}.hint{color:var(--muted);font-size:13px;margin:0 0 22px}.status{min-height:24px;font-size:13px;color:var(--wine);margin:12px 0 0}.sheet{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:32px 34px;box-shadow:0 10px 32px #4c35350b}.sheet-head{border-bottom:2px solid var(--wine);padding-bottom:18px;margin-bottom:18px}.sheet-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px}.sheet h2{font-size:25px;letter-spacing:-.7px;margin:0}.sheet .tag{font-size:12px;color:var(--wine);font-weight:700;white-space:nowrap}.meta{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-top:15px;font-size:13px;color:var(--muted)}.meta input{border:0;border-bottom:1px solid #c4b8b7;background:transparent;border-radius:0;color:var(--ink);width:115px;padding:0 4px;outline-offset:3px}.sheet-note{font-size:12px;color:var(--muted);margin:12px 0 0}.empty{min-height:360px;display:grid;place-content:center;text-align:center;color:var(--muted);padding:30px}.empty .symbol{font-family:serif;font-size:60px;color:#cab0b4;line-height:1.3}.empty h3{font-size:18px;color:var(--ink);margin:14px 0 8px}.empty p{font-size:14px;margin:0}.exam{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:26px}.column{min-width:0}.column-head{display:grid;grid-template-columns:28px minmax(0,1fr) minmax(100px,1.1fr);gap:7px;font-size:11px;color:var(--muted);padding:0 0 8px;border-bottom:1px solid var(--line)}.column-head span:last-child{text-align:center}.question{display:grid;grid-template-columns:28px minmax(0,1fr) minmax(100px,1.1fr);gap:7px;align-items:center;min-height:64px;border-bottom:1px solid var(--line);break-inside:avoid}.number{font-size:12px;font-variant-numeric:tabular-nums;color:var(--wine);font-weight:800}.meaning{font-size:13px;word-break:keep-all;overflow-wrap:anywhere;padding:6px 0}.answer-space{height:53px;position:relative;background:linear-gradient(to bottom,transparent calc(100% - 7px),#d5c9c8 calc(100% - 7px),#d5c9c8 calc(100% - 6px),transparent calc(100% - 6px))}.answer-space canvas{width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}.answer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--wine-dark);font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;font-size:24px;letter-spacing:2px;pointer-events:none;background:var(--paper)}.answer[hidden]{display:none}.answers-visible canvas{visibility:hidden}.sheet-footer{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:#958688;margin-top:18px}details{margin-top:22px;font-size:13px;color:var(--muted)}summary{cursor:pointer;width:fit-content}details p{margin:10px 0 0}.source-counts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.source-counts span{border:1px solid var(--line);background:#faf7f3;padding:5px 9px;border-radius:6px}[hidden]{display:none!important}
+@media(max-width:760px){.app{padding:24px 14px}.top h1{font-size:22px}.badge{font-size:11px;padding:7px 10px}.sheet{padding:24px 20px}.sheet h2{font-size:22px}.exam{column-gap:16px}.question,.column-head{grid-template-columns:24px minmax(0,1fr) minmax(80px,1.1fr);gap:5px}.meaning{font-size:12px}.toolbar button{padding:10px 13px;font-size:14px}}
+@media(max-width:570px){.top{align-items:flex-start}.badge{margin-top:5px}.toolbar .spacer{display:none}.toolbar{gap:7px}.exam{grid-template-columns:1fr;gap:18px}.question{min-height:70px;grid-template-columns:28px minmax(0,1fr) minmax(130px,1.2fr)}.column-head{grid-template-columns:28px minmax(0,1fr) minmax(130px,1.2fr)}.meaning{font-size:14px}.answer-space{height:61px}.sheet{padding:24px 16px}.sheet-title{align-items:center}.sheet h2{font-size:21px}.sheet-footer{font-size:10px}.empty{min-height:320px}.meta{gap:10px}.meta input{width:90px}}
+@page{size:A4 portrait;margin:13mm 12mm}
+@media print{body{background:#fff;color:#000}.no-print{display:none!important}.app{max-width:none;margin:0;padding:0}.sheet{border:0;border-radius:0;box-shadow:none;padding:0;background:#fff}.sheet-head{padding-bottom:4mm;margin-bottom:4mm}.sheet h2{font-size:21pt}.sheet-note{font-size:9pt}.sheet-title .tag{font-size:9pt}.meta{font-size:10pt;margin-top:4mm}.exam{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:6mm;row-gap:0}.question{min-height:12.9mm;grid-template-columns:6mm minmax(0,1fr) minmax(28mm,1.15fr);gap:1.5mm}.column-head{grid-template-columns:6mm minmax(0,1fr) minmax(28mm,1.15fr);gap:1.5mm;font-size:8pt;padding-bottom:2mm}.meaning{font-size:9pt;line-height:1.4;padding:1mm 0}.number{font-size:9pt}.answer-space{height:11mm;background:none;border-bottom:1px solid #c7bdbd;margin-bottom:2mm}.answer{font-size:19pt;background:#fff}.sheet-footer{font-size:8pt;margin-top:4mm}.meta input{width:30mm}.empty{display:none}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="top no-print"><div><p class="eyebrow">CHINESE VOCABULARY</p><h1>나만의 중국어 단어 시험</h1></div><span class="badge" id="word-count"></span></header>
+  <div class="toolbar no-print" aria-label="시험지 도구">
+    <button type="button" class="primary" id="generate">문제제작</button>
+    <button type="button" id="toggle" disabled aria-pressed="false">정답표기</button>
+    <span class="spacer"></span>
+    <button type="button" id="clear-ink" disabled>필기 지우기</button>
+    <button type="button" id="print" disabled>인쇄 / PDF 저장</button>
+  </div>
+  <p class="hint no-print">문제제작을 누르면 새로운 30문항이 나옵니다. 빈칸에 펜·마우스로 쓰거나 인쇄해서 풀어 보세요.</p>
+  <section class="sheet" id="sheet" aria-label="중국어 단어 시험지">
+    <div class="sheet-head">
+      <div class="sheet-title"><h2>중국어 단어 시험지</h2><span class="tag" id="sheet-tag">한국어 → 중국어 한자</span></div>
+      <div class="meta"><label>이름 <input aria-label="이름" autocomplete="off"></label><label>날짜 <input aria-label="날짜" autocomplete="off"></label><span>점수 _____ / 30</span></div>
+      <p class="sheet-note" id="sheet-note">한국어 뜻에 맞는 중국어 한자(간체자)를 쓰세요.</p>
+    </div>
+    <div class="empty" id="empty"><div class="symbol" aria-hidden="true">学</div><h3>오늘의 30단어를 만나 보세요</h3><p>위의 <strong>문제제작</strong> 버튼으로 시작하세요.</p></div>
+    <div class="exam" id="exam" hidden></div>
+    <div class="sheet-footer"><span>교재 단어색인 191–195쪽</span><span id="edition">무작위 30문항 · 중복 없음</span></div>
+  </section>
+  <p class="status no-print" id="status" role="status" aria-live="polite"></p>
+  <details class="no-print"><summary>출제 범위 · 사용 안내</summary><p>첨부한 다섯 쪽의 단어를 모두 사용합니다. 사진에는 한국어 뜻이 없어 기본 뜻을 붙였으며, 양사·조사에는 용도를 함께 적었습니다. 같은 시험 안에서는 단어가 중복되지 않으며, 새 시험에서는 이전 단어가 다시 나올 수 있습니다.</p><div class="source-counts" id="source-counts"></div><p>정답표기는 현재 문제의 한자만 보여 줍니다. 정답숨기기를 누르면 작성한 필기가 다시 보입니다. 문제제작은 문제와 필기를 새로 만듭니다. 인쇄할 때도 현재 정답 표시 상태가 적용됩니다.</p><p>파일을 내려받아 웹 브라우저에서 열면 인터넷 연결 없이 사용할 수 있습니다. 필기는 이 화면을 열어 둔 동안만 유지됩니다.</p></details>
+  <noscript>이 시험지는 자바스크립트를 허용한 웹 브라우저에서 사용할 수 있습니다.</noscript>
+</main>
+<script>
+'use strict';
+// 사진의 단어색인 191–195쪽 순서. 한 줄: 중국어|한국어 뜻
+const SOURCE = [
+{page:191, text:`啊|아! (감탄·어기 조사)
+爱|사랑하다
+爸爸|아빠
+吧|~하자, ~해라 (제안·권유의 조사)
+百|백 (100)
+班|반, 학급
+半|반, 절반
+包|가방; 싸다, 포장하다
+杯|잔 (음료를 세는 단위)
+北京|베이징
+本|권 (책을 세는 단위)
+不|~하지 않다 (부정)
+不错|괜찮다, 나쁘지 않다
+不客气|천만에요
+菜|요리, 반찬; 채소
+茶|차 (음료)
+查|찾아보다, 조사하다
+尝|맛보다
+炒饭|볶음밥
+炒面|볶음면
+车|차, 차량
+吃|먹다
+出发|출발하다
+出去|나가다
+次|번, 차례 (횟수 단위)
+词典|사전
+答应|승낙하다, 응하다
+打算|계획하다, ~할 생각이다
+大|크다
+大学生|대학생
+带|가지고 가다; 데리고 가다
+带走|가지고 떠나다, 가져가다
+蛋糕|케이크
+的|~의 (관형어를 만드는 조사)
+弟弟|남동생
+地铁|지하철
+第一|첫째, 제일
+点|시 (시각 단위); 점
+电影|영화
+电影院|영화관
+都|모두, 다
+读|읽다
+度|도 (온도 등의 단위)
+对|맞다, 옳다
+对不起|미안합니다
+多|많다
+多少|얼마, 몇 (수량을 물음)
+二|이 (숫자 2)
+放假|방학하다, 휴가가 되다
+飞机|비행기
+服务员|종업원, 직원
+附近|부근, 근처
+高|높다; 키가 크다
+高兴|기쁘다
+歌|노래
+哥哥|형, 오빠
+个|개, 명 (일반적인 양사)`},
+{page:192, text:`给|주다; ~에게
+更|더, 더욱
+公交车|시내버스
+公园|공원
+工作|일; 일하다
+光临|방문하시다 (손님에게 쓰는 높임말)
+逛|돌아다니다, 구경하다
+贵|비싸다
+贵姓|성함이 어떻게 되십니까? (성을 높여 물음)
+国|나라
+国家图书馆|국가도서관
+还|아직, 여전히; 또
+还是|아니면 (선택 의문문); 여전히
+韩国|한국
+韩国人|한국인
+韩语|한국어
+汉语|중국어
+好|좋다
+号|일 (날짜 단위); 번호
+好吃|맛있다 (음식)
+好喝|맛있다 (음료)
+好看|보기 좋다, 볼 만하다
+好听|듣기 좋다
+喝|마시다
+和|~와, ~과
+很|매우, 아주
+花|꽃
+欢迎|환영하다
+回家|집에 돌아가다
+火车|기차
+几|몇 (주로 적은 수를 물음)
+家|집, 가정
+加|더하다, 추가하다
+见|보다, 만나다
+件|벌, 건 (옷·일 등을 세는 단위)
+见面|얼굴을 마주하다, 만나다
+叫|~라고 부르다; 이름이 ~이다
+街|거리, 길거리
+姐姐|누나, 언니
+介绍|소개하다
+今年|올해
+今天|오늘
+就|곧, 바로; ~하자마자
+觉得|~라고 느끼다, 생각하다
+决定|결정하다
+咖啡|커피
+咖啡厅|커피숍, 카페
+开车|운전하다
+开始|시작하다
+开学|개학하다
+看|보다 (눈으로)
+考试|시험; 시험을 보다
+可爱|귀엽다
+可是|그러나, 하지만
+可以|~해도 된다, ~할 수 있다
+空儿|틈, 여유 시간
+口|입; 명 (가족 수를 세는 단위)
+块|위안 (구어체 화폐 단위); 덩어리
+快|빠르다
+来|오다
+了|~했다 (완료·변화를 나타내는 조사)
+累|피곤하다
+礼物|선물
+两|둘, 두 (양사 앞에서 쓰는 수사)
+零下|영하`},
+{page:193, text:`妈妈|엄마
+吗|~입니까? (의문 조사)
+买|사다, 구매하다
+卖|팔다
+慢|느리다
+忙|바쁘다
+没（有）|없다; ~하지 않았다 (과거·경험 부정)
+没关系|괜찮습니다 (사과에 대한 대답)
+美国|미국
+美国人|미국인
+美式咖啡|아메리카노
+妹妹|여동생
+面|면, 국수
+明天|내일
+名字|이름
+茉莉花|재스민꽃
+哪|어느, 어떤
+哪儿|어디
+那|그, 저 (지시어)
+那儿|그곳, 저곳
+那天|그날
+难|어렵다
+呢|~는요? (되묻는 조사)
+你|너, 당신
+你好|안녕하세요
+年级|학년
+年纪|나이
+女朋友|여자 친구, 여자 애인
+旁边儿|옆, 곁
+朋友|친구
+便宜|값이 싸다
+漂亮|예쁘다, 아름답다
+苹果|사과 (과일)
+起床|일어나다, 기상하다
+骑|타다 (자전거·말 등에)
+气温|기온
+钱|돈
+巧克力|초콜릿
+清楚|분명하다, 똑똑히 알다
+请|청하다, 부탁하다; ~하세요
+请问|말씀 좀 묻겠습니다, 실례지만
+去|가다
+全家福|가족사진
+然后|그런 다음, 그리고 나서
+热|덥다, 뜨겁다
+人|사람
+认识|알다, 알고 지내다 (사람 등을)
+日本|일본
+散步|산책하다
+商店|상점, 가게
+上午|오전
+谁|누구
+什么|무엇
+身体|몸, 신체
+生词|새 단어, 모르는 단어
+生日|생일
+十|십 (10)
+是|~이다
+是的|네, 그렇습니다
+时间|시간
+事儿|일, 용무`},
+{page:194, text:`手机|휴대전화
+书|책
+书包|책가방
+水|물
+睡觉|잠자다
+说|말하다
+岁|살 (나이 단위)
+所以|그래서, 그러므로
+他|그 (남성)
+他们|그들 (남성 또는 남녀 혼합)
+她|그녀
+太|너무, 지나치게
+糖|설탕, 사탕
+天气|날씨
+天气预报|일기예보
+听|듣다
+图书馆|도서관
+玩儿|놀다
+晚|늦다
+晚饭|저녁밥
+味道|맛, 냄새
+魏公村|웨이궁춘 (베이징 지명)
+为什么|왜, 무엇 때문에
+问|묻다, 질문하다
+问题|문제, 질문
+我|나, 저
+我们|우리, 저희
+五|오 (숫자 5)
+喜欢|좋아하다
+下|아래; 내리다
+下午|오후
+先|먼저
+线|선, 노선
+现在|지금, 현재
+相信|믿다
+想|~하고 싶다; 생각하다
+小|작다
+小朋友|어린이
+小说|소설
+小学生|초등학생
+写|쓰다 (글씨를)
+谢谢|감사합니다
+星期|요일; 주, 주일
+星期天|일요일
+行|괜찮다, 가능하다
+姓|성; 성이 ~이다
+休息|쉬다, 휴식하다
+学|배우다
+学习|공부하다, 학습하다
+学校|학교
+要|원하다; ~하려고 하다
+也|~도, 또한
+一|일 (숫자 1)
+衣服|옷
+一共|모두 합해서, 총
+以后|이후, ~한 뒤
+已经|이미, 벌써
+因为|왜냐하면, ~때문에
+银行|은행
+英语|영어
+一起|함께, 같이
+一直|줄곧, 계속
+用|쓰다, 사용하다
+有|있다, 가지고 있다
+约|약속하다; 약, 대략`},
+{page:195, text:`月|월, 달
+再|다시, 또 (앞으로의 반복)
+再见|안녕히 가세요, 또 만나요
+在|~에 있다; ~에서
+咱们|우리 (듣는 사람을 포함)
+怎么|어떻게
+怎么样|어떻다, 어떠한가
+站|역, 정류장; 서다
+这|이, 이것
+这儿|여기, 이곳
+真|정말, 참으로
+正好|마침, 딱 알맞게
+知道|알다 (사실·정보를)
+中国|중국
+中国人|중국인
+中文系|중문과, 중국어문학과
+周末|주말
+字|글자, 문자
+自行车|자전거
+走|걷다; 떠나다
+最|가장, 제일
+最后|마지막, 최후
+最近|최근, 요즘
+坐|앉다; 타다 (교통수단에)
+做|하다, 만들다`}
+];
+const WORDS = SOURCE.flatMap(({page,text})=>text.trim().split('\n').map(line=>{const [hanzi,meaning]=line.split('|');return {hanzi,meaning,page};}));
+const $=id=>document.getElementById(id);
+const exam=$('exam');
+let selected=[], answersVisible=false, generation=0;
+$('word-count').textContent=`전체 ${WORDS.length}단어 · 매회 30문항`;
+SOURCE.forEach(({page,text})=>{const span=document.createElement('span');span.textContent=`${page}쪽 · ${text.trim().split('\n').length}단어`;$('source-counts').append(span);});
+// Fisher–Yates: 중복 추출 없이 모든 단어를 같은 확률로 섞는다.
+function sample(){const pool=WORDS.slice();for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}return pool.slice(0,30);}
+function setAnswers(visible){
+  answersVisible=visible;
+  $('sheet').classList.toggle('answers-visible',visible);
+  exam.querySelectorAll('.answer').forEach(el=>{el.hidden=!visible;});
+  $('toggle').textContent=visible?'정답숨기기':'정답표기';
+  $('toggle').setAttribute('aria-pressed',String(visible));
+  $('clear-ink').disabled=!selected.length||visible;
+  $('sheet-tag').textContent=visible?'정답 · 중국어 한자':'한국어 → 중국어 한자';
+  $('sheet-note').textContent=visible?'정답을 확인하세요. 정답숨기기를 누르면 작성한 필기가 다시 보입니다.':'한국어 뜻에 맞는 중국어 한자(간체자)를 쓰세요.';
+}
+function setupInk(canvas){
+  // 좌표를 0–1로 저장하여 화면 폭·인쇄 레이아웃이 바뀌어도 필기를 유지한다.
+  const ctx=canvas.getContext('2d');let strokes=[],active=null,pointer=null;
+  const point=e=>{const r=canvas.getBoundingClientRect();return {x:Math.max(0,Math.min(1,(e.clientX-r.left)/r.width)),y:Math.max(0,Math.min(1,(e.clientY-r.top)/r.height))};};
+  function paint(){const w=canvas.width,h=canvas.height;ctx.clearRect(0,0,w,h);ctx.strokeStyle='#232329';ctx.fillStyle='#232329';ctx.lineCap='round';ctx.lineJoin='round';ctx.lineWidth=2*(window.devicePixelRatio||1);for(const stroke of strokes){if(!stroke.length)continue;ctx.beginPath();ctx.moveTo(stroke[0].x*w,stroke[0].y*h);for(let i=1;i<stroke.length;i++)ctx.lineTo(stroke[i].x*w,stroke[i].y*h);if(stroke.length===1){ctx.arc(stroke[0].x*w,stroke[0].y*h,ctx.lineWidth/2,0,Math.PI*2);ctx.fill();}else ctx.stroke();}}
+  function resize(){const r=canvas.getBoundingClientRect();const dpr=window.devicePixelRatio||1;const w=Math.max(1,Math.round(r.width*dpr)),h=Math.max(1,Math.round(r.height*dpr));if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;paint();}}
+  const observer=new ResizeObserver(resize);observer.observe(canvas);
+  canvas.addEventListener('pointerdown',e=>{if(answersVisible||e.button!==0||pointer!==null)return;e.preventDefault();pointer=e.pointerId;active=[point(e)];strokes.push(active);canvas.setPointerCapture(pointer);paint();});
+  canvas.addEventListener('pointermove',e=>{if(e.pointerId!==pointer||!active)return;for(const event of (e.getCoalescedEvents?.()||[e]))active.push(point(event));paint();});
+  const finish=e=>{if(e.pointerId===pointer){active=null;pointer=null;}};
+  canvas.addEventListener('pointerup',finish);canvas.addEventListener('pointercancel',finish);canvas.addEventListener('lostpointercapture',finish);
+  canvas.clearInk=()=>{strokes=[];active=null;pointer=null;paint();};
+  canvas.disposeInk=()=>observer.disconnect();resize();
+}
+function generate(){
+  selected=sample();generation++;
+  exam.querySelectorAll('canvas').forEach(c=>c.disposeInk?.());exam.replaceChildren();
+  $('empty').hidden=true;exam.hidden=false;
+  for(let col=0;col<2;col++){
+    const column=document.createElement('div');column.className='column';
+    const head=document.createElement('div');head.className='column-head';
+    ['번호','한국어 뜻','중국어 한자'].forEach(text=>{const span=document.createElement('span');span.textContent=text;head.append(span);});column.append(head);
+    selected.slice(col*15,col*15+15).forEach((word,index)=>{
+      const number=col*15+index+1,row=document.createElement('div');row.className='question';row.dataset.number=number;
+      const num=document.createElement('span');num.className='number';num.textContent=String(number).padStart(2,'0');
+      const meaning=document.createElement('span');meaning.className='meaning';meaning.textContent=word.meaning;
+      const space=document.createElement('div');space.className='answer-space';
+      const canvas=document.createElement('canvas');canvas.setAttribute('aria-label',`${number}번 수기 답안 칸`);
+      const answer=document.createElement('span');answer.className='answer';answer.lang='zh-CN';answer.textContent=word.hanzi;answer.hidden=true;
+      space.append(canvas,answer);row.append(num,meaning,space);column.append(row);
+    });exam.append(column);
+  }
+  exam.querySelectorAll('canvas').forEach(setupInk);
+  $('toggle').disabled=false;$('print').disabled=false;setAnswers(false);
+  $('edition').textContent=`제${generation}회 · 30문항 · 중복 없음`;
+  $('status').textContent=`제${generation}회 시험지 30문항을 만들었습니다. 정답은 숨겨져 있습니다.`;
+}
+$('generate').addEventListener('click',generate);
+$('toggle').addEventListener('click',()=>{setAnswers(!answersVisible);$('status').textContent=answersVisible?'현재 30문항의 한자 정답을 표시했습니다.':'정답을 숨겼습니다. 작성을 계속할 수 있습니다.';});
+$('clear-ink').addEventListener('click',()=>{exam.querySelectorAll('canvas').forEach(c=>c.clearInk());$('status').textContent='필기를 모두 지웠습니다. 현재 문제는 유지됩니다.';});
+$('print').addEventListener('click',()=>window.print());
+</script>
+</body>
+</html>
